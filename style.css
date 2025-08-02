@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 2rem;
+}
+
+html {
+  font-size: 11px;
+  font-family: 'DM Serif Text', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+body {
+  background: #EDDBFF;
+  color: #124A2B;
+  padding: 3rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h3,
+nav div i {
+  font-size: 2rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  padding: 5rem 0;
+}
+
+header img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 200px;
+  padding: 2rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+header p {
+  font-size: 1.4rem;
+}
+
+.aboutsec h1,
+.Carousel h1,
+.handles h1 {
+  font-size: 2.4rem;
+  padding: 2rem 0;
+  font-weight: 200;
+}
+
+.aboutsec p {
+  font-size: 1.4rem;
+  letter-spacing: .5px;
+  padding-bottom: 3rem;
+}
+
+.Carousel .box {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  overflow-x: scroll;
+  padding-bottom: 3rem;
+  scroll-snap-type: x mandatory;
+}
+
+.Carousel .box img {
+  scroll-snap-align: center;
+  height: 16rem;
+  border-radius: 2rem;
+}
+
+::-webkit-scrollbar {
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E3E5FF;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 1.5px;
+  background: #00000033;
+  
+}
+
+.handles ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  padding-left: 2rem;
+}
+
+.handles ul li a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  gap: .75rem;
+}
+
+.handles ul li a * {
+  font-size: 1.5rem;
+  color: #1C2262;
+}
+
+.copyright {
+  position: relative;
+  inset: auto 0 0 0;
+  text-align: center;
+  padding-top: 7rem;
+}
